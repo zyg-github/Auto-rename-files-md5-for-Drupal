@@ -1,0 +1,13 @@
+name = auto rename files md5
+description = 自动重命名
+core = 7.x
+package = wps
+
+
+files[] = auto_rename_files_md5.module
+
+
+
+
+
+
