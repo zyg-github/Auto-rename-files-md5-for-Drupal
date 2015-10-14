@@ -5,7 +5,7 @@
  */
 function auto_rename_files_md5_file_insert($file) {
   //$hash = 'public://' .$file->file_destination.'/'.md5($file->filename) . '.' . pathinfo($file->filename, PATHINFO_EXTENSION);
-  $hash = drupal_dirname($file->uri).'/'.md5($file->filename) . '.' . pathinfo($file->filename, PATHINFO_EXTENSION);
+  $hash = drupal_dirname($file->uri).'/'.md5($file->filename) .'_'.time(). '.' . pathinfo($file->filename, PATHINFO_EXTENSION);
 
   //drupal_set_message(pathinfo($file->filename, PATHINFO_EXTENSION));
   //drupal_set_message(drupal_dirname($file->uri));
